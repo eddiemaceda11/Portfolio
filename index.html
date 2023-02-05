@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/jpg" href="img/code.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
@@ -13,324 +14,254 @@
       <div></div>
       <a href="#navbar"><i class="fa-solid fa-house"></i></a>
       <a href="https://www.linkedin.com/in/eddie-maceda/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+      <a href="https://github.com/eddiemaceda11" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="#" target="_blank"><i class="fa-solid fa-file"></i></a>
       <a href="#contact"><i class="fa-solid fa-envelope"></i></a>
       <div></div>
     </div>
-    <!-- Header -->
-    <header class="navbar" id="navbar">
-      <div class="container">
-        <p class="logo">E</p>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about"><span>01.</span> About</a>
-            </li>
-            <li>
-              <a href="#projects"><span>02.</span> Projects</a>
-            </li>
-            <li>
-              <a href="#contact"><span>03.</span> Contact</a>
-            </li>
-            <li><a href="#">Resume</a></li>
-          </ul>
-          <div class="hamburger">
-            <div class="bar"></div>
-          </div>
-        </nav>
-      </div>
-    </header>
-
-    <!-- Main -->
-    <main class="main">
-      <div class="container">
-        <h4>Hi, my name is</h4>
-        <div class="big-text">
-          <h2>Eddie Maceda.</h2>
-          <h2>I'm a Web Developer.</h2>
-        </div>
-        <p>I'm a Front-end developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Upstatement.</p>
-        <button><a href="#">My Projects</a></button>
-      </div>
-    </main>
-
-    <!-- About -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="heading">
-          <div></div>
-          <h3><span>01.</span>About</h3>
-          <div></div>
-        </div>
-        <h4 class="about-main-text">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</h4>
-        <div class="about-cards">
-          <div class="card"></div>
-          <div class="card"></div>
-          <div class="card"></div>
-        </div>
-        <div class="skills">
-          <p>My Skills</p>
-          <div class="boxes">
-            <ul class="box-container">
-              <li class="box one">Html</li>
-              <li class="box two">Css</li>
-              <li class="box three">Javascript</li>
-              <li class="box four">Github</li>
-            </ul>
-            <ul class="box-container">
-              <li class="box five">Git</li>
-              <li class="box six">Vs code</li>
-              <li class="box seven">Responsive Design</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!-- dropdown -->
+    <section class="dropdown hidden" id="dropdown">
+      <i class="fa-regular fa-circle-xmark" id="exit-dropdown"></i>
+      <ul id="dropdown-ul">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <li>
+          <span>01.</span>
+          <a href="#about" class="dropdown-item"> About</a>
+        </li>
+        <li>
+          <span>02.</span>
+          <a href="#projects" class="dropdown-item">Projects</a>
+        </li>
+        <li>
+          <span>03.</span>
+          <a href="#contact" class="dropdown-item"> Contact</a>
+        </li>
+        <li><a href="#">Resume</a></li>
+      </ul>
     </section>
-
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="heading">
-          <div></div>
-          <h3><span>02.</span>My Projects</h3>
-          <div></div>
-        </div>
-
-        <!-- <div class="project-cards">
-          <div class="project-div">
-            <div class="card">
-              <img src="img/Nuestro-pan-dulce.png" alt="" />
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
-                </ul>
-              </div>
+    <div id="page-container">
+      <!-- Header -->
+      <header class="navbar" id="navbar">
+        <div class="container">
+          <p class="logo">E</p>
+          <nav>
+            <ul>
+              <li>
+                <a href="#about"><span>01.</span> About</a>
+              </li>
+              <li>
+                <a href="#projects"><span>02.</span> Projects</a>
+              </li>
+              <li>
+                <a href="#contact"><span>03.</span> Contact</a>
+              </li>
+              <li><a href="#">Resume</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+              <div class="bar"></div>
             </div>
-            <div class="description">
+          </nav>
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="container">
+          <h4>Hi, my name is</h4>
+          <div class="big-text">
+            <h2>Eddie Maceda.</h2>
+            <h2>I'm a Web Developer.</h2>
+          </div>
+          <!-- <p>I'm a Front-end developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products at Upstatement.</p> -->
+          <p>Building front-End websites and applications.</p>
+          <button><a href="#">My Projects</a></button>
+        </div>
+      </main>
+
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="container">
+          <div class="heading">
+            <div></div>
+            <h3><span>01.</span>About</h3>
+            <div></div>
+          </div>
+          <p class="about-main-text">Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology.</p>
+          <div class="about-cards">
+            <div class="about-card">
+              <img src="./img/laptop.avif" alt="" />
+              <h4>My Work</h4>
+              <p>I'm a web developer, specializing in the Front-End development and design of UI and UX components. I have a passion for bringing new ideas to life, with the use of HMTL, CSS, and Javascript.</p>
+            </div>
+            <div class="about-card">
+              <img src="./img/work-station.avif" alt="" />
+              <h4>Fun Facts</h4>
+              <p>When I'm not at my computer, I enjoy spending time with my family, listening to podcasts, and exploring the world. I love a good cup of coffee. Some would also consider me a film nerd.</p>
+            </div>
+          </div>
+
+          <div class="skills">
+            <p>My Skills</p>
+            <div class="boxes">
+              <ul class="box-container">
+                <li class="box one">Html</li>
+                <li class="box two">Css</li>
+                <li class="box three">Javascript</li>
+                <li class="box four">Github</li>
+              </ul>
+              <ul class="box-container">
+                <li class="box five">Git</li>
+                <li class="box six">Vs code</li>
+                <li class="box seven">Responsive Design</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="projects" id="projects">
+        <div class="container">
+          <div class="heading">
+            <div></div>
+            <h3><span>02.</span>My Projects</h3>
+            <div></div>
+          </div>
+
+          <div class="mobile-project-cards">
+            <div class="project-div">
               <h4>Nuestro pan dulce</h4>
-              <p>
-                This is a website concept that I designed to be used for a Spanish owned Bakery/Cake Shop, called "Nuestro Pan Dulce" (Our Sweet Bread). With this project, I challenged myself to create the entire content of this page using only DOM manipulation - no HTML. The website consists of a
-                Home page, a Menu page, and an About page.
-              </p>
-              <ul class="languages one">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-              </ul>
+              <div class="card">
+                <img src="img/Nuestro-pan-dulce.png" alt="" />
+                <div class="info">
+                  <ul class="links">
+                    <li><a target="_blank" href="https://nuestropandulce.netlify.app/">Live Demo</a></li>
+                    <li><a href="#">View Code</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="description one">
+                <p>
+                  This is a website concept that I designed to be used for a Spanish owned Bakery/Cake Shop, called "Nuestro Pan Dulce" (Our Sweet Bread). With this project, I challenged myself to create the entire content of this page using only DOM manipulation - no HTML. The website consists of a
+                  Home page, a Menu page, and an About page.
+                </p>
+                <ul class="languages one">
+                  <li class="box">Html</li>
+                  <li class="box">Css</li>
+                  <li class="box">Javascript</li>
+                </ul>
+              </div>
             </div>
-          </div>
 
-          <div class="project-div">
-            <div class="description">
+            <div class="project-div">
               <h4>Weather App</h4>
-              <p>
-                This is an app I created using the
-                <a href="https://openweathermap.org/api" target="_blank">Openweather API</a>. This project allows the user to search for a location, and get the current weather for that location, as well as some additional information, such as an icon for displaying the weather, and an option to
-                toggle between °F and °C. I also incorporated a light/dark theme toggle button to help provide a better overall UX.
-              </p>
-              <ul class="languages two">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-                <li class="box">API</li>
-              </ul>
-            </div>
-            <div class="card">
-              <img src="img/weather-app.png" alt="" />
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
+              <div class="card">
+                <img src="img/weather-app.png" alt="" />
+                <div class="info">
+                  <ul class="links">
+                    <li><a href="#">Live Demo</a></li>
+                    <li><a href="#">View Code</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="description two">
+                <p>
+                  This is an app I created using the
+                  <a href="https://openweathermap.org/api" target="_blank">Openweather API</a>. This project allows the user to search for a location, and get the current weather for that location, as well as some additional information, such as an icon for displaying the weather, and an option to
+                  toggle between °F and °C. I also incorporated a light/dark theme toggle button to help provide a better overall UX.
+                </p>
+                <ul class="languages two">
+                  <li class="box">Html</li>
+                  <li class="box">Css</li>
+                  <li class="box">Javascript</li>
                 </ul>
               </div>
             </div>
-          </div>
 
-          <div class="project-div">
-            <div class="card">
-              <img src="img/To-do.png" alt="" />
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
+            <div class="project-div todo">
+              <h4>Foodsy</h4>
+              <div class="card">
+                <img src="img/foodsy.png" alt="" />
+                <div class="info">
+                  <ul class="links">
+                    <li><a href="https://foodly-us.netlify.app/" target="_blank">Live Demo</a></li>
+                    <li><a href="#">View Code</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="description three">
+                <p>
+                  This is a website that I built using the <a href="https://www.themealdb.com/api.php" target="_blank">mealdb API</a>. I chose to go with a simplistic design, and focus more on the functionality and features of the site. The user is able to search for recipes by ingredient, and each
+                  recipe contains a popup that includes the recipe instructions, a video of the recipe, and an image of the dish.
+                </p>
+                <ul class="languages three">
+                  <li class="box">Html</li>
+                  <li class="box">Css</li>
+                  <li class="box">Javascript</li>
                 </ul>
               </div>
             </div>
-            <div class="description">
-              <h4>To-do List</h4>
-              <p>
-                This is a To-do list that was created with JavaScript modules, and the use of webpack. I chose to go with a simplistic design, and focus more on the functionality and features of the project. The project allows the user to add/delete tasks, select the level of priority, edit tasks,
-                and add/delete projects.
-              </p>
-              <ul class="languages three">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-                <li class="box">Webpack</li>
-              </ul>
-            </div>
-          </div>
 
-          <div class="project-div">
-            <div class="description">
+            <div class="project-div">
               <h4>Portfolio</h4>
-              <p>This is my personal portfolio, created from scratch using HTML, CSS, and Javascript.</p>
-              <ul class="languages two">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-                <li class="box">API</li>
-              </ul>
-            </div>
-            <div class="card">
-              <img src="img/Portfolio.png" alt="" />
+              <div class="card">
+                <img src="img/Portfolio.png" alt="" />
 
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
+                <div class="info">
+                  <ul class="links">
+                    <!-- <li><a href="#">Live Demo</a></li> -->
+                    <li><a href="#">View Code</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="description four">
+                <p>This is my personal portfolio, created from scratch using HTML, CSS, and Javascript.</p>
+                <ul class="languages two">
+                  <li class="box">Html</li>
+                  <li class="box">Css</li>
+                  <li class="box">Javascript</li>
                 </ul>
               </div>
-            </div>
-          </div>
-        </div> -->
-
-        <div class="mobile-project-cards">
-          <div class="project-div">
-            <h4>Nuestro pan dulce</h4>
-            <div class="card">
-              <img src="img/Nuestro-pan-dulce.png" alt="" />
-              <div class="info">
-                <ul class="links">
-                  <li><a 3href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="description one">
-              <p>
-                This is a website concept that I designed to be used for a Spanish owned Bakery/Cake Shop, called "Nuestro Pan Dulce" (Our Sweet Bread). With this project, I challenged myself to create the entire content of this page using only DOM manipulation - no HTML. The website consists of a
-                Home page, a Menu page, and an About page.
-              </p>
-              <ul class="languages one">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-div">
-            <h4>Weather App</h4>
-            <div class="card">
-              <img src="img/weather-app.png" alt="" />
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="description two">
-              <p>
-                This is an app I created using the
-                <a href="https://openweathermap.org/api" target="_blank">Openweather API</a>. This project allows the user to search for a location, and get the current weather for that location, as well as some additional information, such as an icon for displaying the weather, and an option to
-                toggle between °F and °C. I also incorporated a light/dark theme toggle button to help provide a better overall UX.
-              </p>
-              <ul class="languages two">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-div todo">
-            <h4>To-do List</h4>
-            <div class="card">
-              <img src="img/To-do.png" alt="" />
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="description three">
-              <p>
-                This is a To-do list that was created with JavaScript modules, and the use of webpack. I chose to go with a simplistic design, and focus more on the functionality and features of the project. The project allows the user to add/delete tasks, select the level of priority, edit tasks,
-                and add/delete projects.
-              </p>
-              <ul class="languages three">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="project-div">
-            <h4>Portfolio</h4>
-            <div class="card">
-              <img src="img/Portfolio.png" alt="" />
-
-              <div class="info">
-                <ul class="links">
-                  <li><a href="#">Live Demo</a></li>
-                  <li><a href="#">View Code</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="description four">
-              <p>This is my personal portfolio, created from scratch using HTML, CSS, and Javascript.</p>
-              <ul class="languages two">
-                <li class="box">Html</li>
-                <li class="box">Css</li>
-                <li class="box">Javascript</li>
-              </ul>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-      <div class="container">
-        <div class="heading">
-          <div></div>
-          <h3><span>03.</span>Contact</h3>
-          <div></div>
+      <!-- Contact -->
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="heading">
+            <div></div>
+            <h3><span>03.</span>Contact</h3>
+            <div></div>
+          </div>
+          <p>Please feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p>
+          <form autocomplete="off" action="https://formsubmit.co/eddiemaceda11@gmail.com" method="POST">
+            <div class="form-control first">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter Your Name" required />
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter Your Email" required />
+            </div>
+            <div class="form-control">
+              <label for="message">Message</label>
+              <textarea id="message" placeholder="Enter Your Message" rows="6" cols="50" required></textarea>
+            </div>
+            <div class="form-control">
+              <input type="submit" />
+            </div>
+          </form>
         </div>
-        <p>Please feel free to Contact me by submitting the form below and I will get back to you as soon as possible.</p>
-        <form autocomplete="off" action="https://formsubmit.co/eddiemaceda11@gmail.com" method="POST">
-          <div class="form-control first">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter Your Name" required />
-          </div>
-          <div class="form-control">
-            <label for="email">Email</label>
-            <input type="text" id="email" placeholder="Enter Your Email" required />
-          </div>
-          <div class="form-control">
-            <label for="message">Message</label>
-            <textarea id="message" placeholder="Enter Your Message" rows="6" cols="50" required></textarea>
-          </div>
-          <div class="form-control">
-            <input type="submit" />
-          </div>
-        </form>
-      </div>
-    </section>
+      </section>
 
-    <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
+      <!-- <form action="https://formsubmit.co/your@email.com" method="POST">
       <input type="text" name="name" required />
       <input type="email" name="email" required />
       <button type="submit">Send</button>
     </form> -->
-
-    <script src="script.js"></script>
+    </div>
+    <script src="main.js"></script>
   </body>
 </html>

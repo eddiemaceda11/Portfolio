@@ -2,6 +2,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
+
 :root {
   --red-color: rgba(191, 0, 0, 0.728);
   --red-hover: rgba(191, 0, 0, 0.16);
@@ -16,7 +18,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Inconsolata", monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -29,6 +31,17 @@ html {
   height: 100%;
   margin: 0 auto;
   /* overflow: auto;  */
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  margin-top: 2rem;
+  height: 130px;
+  color: var(--primary-text-color);
 }
 
 ul {
@@ -98,10 +111,14 @@ i:hover {
 .hamburger:before {
   width: 100%;
   height: 5px;
-  /* background-color: #fff; */
+
   background-color: var(--red-color);
   margin: 6px 0px;
   transition: 0.4s;
+}
+/* dropdown */
+.hidden {
+  display: none;
 }
 
 /*  */
@@ -138,6 +155,7 @@ body {
 /* Navbar */
 header {
   background-color: #fff;
+  border-bottom: 0.1px solid rgba(112, 100, 100, 0.191);
 }
 
 header .container {
@@ -152,8 +170,7 @@ nav {
 }
 
 .navbar {
-  height: 6rem;
-  /* background-color: rgb(25, 23, 23); */
+  height: 5rem;
   width: 100%;
 }
 
@@ -208,7 +225,7 @@ span {
 /* Main */
 .main {
   /* border: red solid 1px; */
-  height: 710px;
+  height: 550px;
   position: relative;
 }
 
@@ -219,7 +236,11 @@ span {
 }
 
 .main h4 {
-  margin-top: 4rem;
+  margin-top: 8rem;
+}
+
+.main h2 {
+  font-size: 5rem;
 }
 
 .main h2:first-child {
@@ -235,12 +256,12 @@ span {
 .main p {
   color: rgba(48, 36, 36, 0.828);
   width: 800px;
-  margin-top: 3rem;
+  margin-top: 4rem;
   line-height: 1.5;
 }
 
 .main button {
-  margin-top: 3rem;
+  margin-top: 5rem;
 }
 
 .main button a {
@@ -250,7 +271,7 @@ span {
 /* About */
 .about {
   background-color: #fff;
-  height: 920px;
+  height: 980px;
 }
 
 .about .container {
@@ -259,15 +280,8 @@ span {
   height: 100%;
 }
 
-.heading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-
-  margin-top: 2rem;
-  height: 130px;
-  color: var(--primary-text-color);
+.about .heading {
+  padding-top: 1rem;
 }
 
 .heading div:first-child,
@@ -288,20 +302,55 @@ span {
   line-height: 1.7;
 }
 
-.about-cards {
-  width: 100%;
-  height: 400px;
-  margin-top: 2.5rem;
-
-  display: flex;
-  justify-content: space-between;
+.about-main-text {
+  padding: 0rem 6rem;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.4rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 
-.card {
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.9rem;
+  max-width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 2.5rem;
+}
+
+.about-card {
   height: 100%;
-  width: 375px;
-  /* border: 1px solid var(--red-color); */
+  width: 360px;
+
+  border-radius: 1rem;
   box-shadow: -1px 0px 6px 0px rgba(21, 20, 20, 0.728);
+}
+
+.about-card img {
+  height: 280px;
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.about-card h4 {
+  /* border: 1px solid red; */
+  margin-top: 0.4rem;
+  max-width: 100%;
+}
+
+.about-card p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin-top: 0.9rem;
+  background-color: rgba(0, 0, 0, 0.06);
+  text-shadow: -1px 0px 6px 0px rgba(21, 20, 20, 0.728);
 }
 
 .skills {
@@ -344,11 +393,12 @@ span {
   display: inline-block;
   text-transform: uppercase;
   font-weight: 600;
+  font-size: 12px;
 }
 
 /* Projects */
 .projects {
-  height: 4300px;
+  height: 4280px;
 }
 
 .projects .container {
@@ -393,6 +443,7 @@ span {
   height: 575px;
   width: 800px;
   transition: transform 0.2s ease-in;
+  box-shadow: -1px 0px 6px 0px rgba(21, 20, 20, 0.728);
 }
 
 .projects .card:hover {
@@ -402,7 +453,7 @@ span {
 .card img {
   width: 100%;
   height: 500px;
-  box-shadow: inset -1px 0px 6px 0px rgba(21, 20, 20, 0.728);
+  /* box-shadow: -1px 0px 6px 0px rgba(21, 20, 20, 0.728); */
   border-bottom: 1px solid lightgrey;
 }
 
@@ -432,15 +483,16 @@ span {
 }
 
 .description.one {
-  height: 330px;
+  height: 350px;
 }
 
 .description.two {
-  height: 360px;
+  height: 350px;
 }
 
 .description.three {
-  height: 330px;
+  height: 350px;
+  padding-bottom: 6rem;
 }
 
 .description p {
@@ -474,22 +526,6 @@ span {
 .languages.four {
   width: 300px;
 }
-
-/* .languages.one {
-  width: 300px;
-}
-
-.languages.two {
-  width: 390px;
-}
-
-.languages.three {
-  width: 420px;
-}
-
-.languages.four {
-  width: 420px;
-} */
 
 /* Contact */
 .contact {
@@ -587,14 +623,12 @@ input:focus {
 
 .form-control input[type="submit"] {
   color: var(--primary-text-color);
-  /* color: var(--primary-text-color); */
   background-color: transparent;
   border: 2px solid var(--red-color);
   border-radius: 4px;
   width: 8rem;
   margin-left: 6.5rem;
   cursor: pointer;
-  /* transition: ; */
 }
 
 .form-control input[type="submit"]:hover {
@@ -605,33 +639,9 @@ input:focus {
   transform: scale(0.98);
 }
 
-/* @media (max-width: 975px) {
-  .projects .heading {
-    width: 670px;
-  }
-
-  .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-
-    margin-top: 2rem;
-    height: 130px;
-    color: var(--primary-text-color);
-  }
-
-  .heading div:first-child,
-  .heading div:nth-child(3) {
-  }
-
-  .projects .heading h3 {
-    font-size: 3rem;
-  }
-} */
+/* MEDIA QUERIES */
 
 /* Small laptops */
-/* @media (min-width: 976px) and (max-width: 1300px) { */
 @media (max-width: 1300px) {
   /* Socials */
   i {
@@ -652,7 +662,7 @@ input:focus {
     position: fixed;
     z-index: 99;
 
-    right: 2%;
+    right: 1%;
     top: 22%;
 
     /* border: 1px solid black; */
@@ -695,7 +705,7 @@ input:focus {
   }
 
   .main {
-    height: 550px;
+    /* height: 550px; */
   }
 
   .main p {
@@ -733,13 +743,12 @@ input:focus {
     width: 8rem;
   }
 
-  .about h4 {
-    width: 80%;
-    text-align: left;
-    font-size: 16px;
-    padding: 0rem 0rem;
-    padding-left: 0.7rem;
-    margin-top: 1.4rem;
+  .about-main-text {
+    width: 800px;
+    text-align: center;
+    /* font-size: 22px; */
+    padding: 0rem 0.7rem;
+    margin: 0 auto;
   }
 
   /* Projects */
@@ -750,10 +759,6 @@ input:focus {
 
   .projects .container {
     min-width: 900px;
-  }
-
-  .projects .heading h3 {
-    margin: 0 auto;
   }
 
   .mobile-project-cards {
@@ -788,15 +793,15 @@ input:focus {
   }
 
   .description.one {
-    height: 400px;
+    height: 380px;
   }
 
   .description.two {
-    height: 430px;
+    height: 410px;
   }
 
   .description.three {
-    height: 400px;
+    height: 380px;
   }
 
   .description p {
@@ -846,6 +851,41 @@ input:focus {
 
 /* Tablets */
 @media (max-width: 975px) {
+  /* main */
+  .main {
+    height: 540px;
+    /* border: 1px solid blue; */
+  }
+
+  /* about */
+
+  .about-main-text {
+    font-size: 1.1rem;
+    width: 620px;
+    color: var(--red-color);
+    font-weight: 600;
+  }
+
+  .about-cards {
+    gap: 1.8rem;
+    max-width: 630px;
+    grid-template-columns: repeat(2, 300px);
+  }
+
+  .about-card {
+    width: 100%;
+  }
+
+  .about h4 {
+    font-size: 1.3rem;
+  }
+
+  .about-card p {
+    font-size: 14px;
+  }
+
+  /* projects */
+
   .projects .heading {
     width: 100%;
   }
@@ -894,7 +934,7 @@ input:focus {
     position: fixed;
     z-index: 99;
 
-    right: 2%;
+    right: 1%;
     top: 22%;
 
     min-width: 50px;
@@ -906,6 +946,10 @@ input:focus {
     height: 88px;
     width: 2px;
     background-color: var(--red-color);
+  }
+  /* main */
+  .main {
+    height: 540px;
   }
 
   /* projects */
@@ -976,11 +1020,58 @@ input:focus {
 
   .description.four {
     height: 300px;
-    /* border: 1px solid red; */
   }
 }
 
-@media (max-width: 740px) {
+@media (max-width: 782px) {
+  /* add/remove using js when user clicks dropdown btn */
+
+  .page-container {
+    filter: blur(6px);
+    pointer-events: none;
+  }
+  /* dropdown */
+  .dropdown {
+    display: block;
+    position: fixed;
+    z-index: 99;
+    right: 0;
+    width: 400px;
+    background: var(--secondary-bg-color);
+    height: 100vh;
+    border-left: 0.1px solid black;
+    backdrop-filter: brightness(60%);
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .dropdown ul {
+    border: 1px solid red;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .dropdown li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fa-circle-xmark {
+    font-size: 35px;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+  }
+
+  .fa-circle-xmark:hover {
+    color: red;
+  }
+
   /* Socials */
   .socials {
     display: none;
@@ -997,7 +1088,7 @@ input:focus {
     height: 35px;
     cursor: pointer;
 
-    margin-top: 2.2rem;
+    margin-top: 1.8rem;
 
     appearance: none;
     background: none;
@@ -1015,6 +1106,46 @@ input:focus {
     background-color: var(--red-color);
     margin: 6px 0px;
     transition: 0.4s;
+  }
+  /* nav */
+  header {
+    position: sticky;
+    z-index: 98;
+    top: 0;
+    /* border-bottom: 0.1px solid rgba(112, 100, 100, 0.191); */
+  }
+
+  /* main */
+  .main {
+    /* padding-top: 3rem; */
+    height: 450px;
+  }
+
+  .main h2 {
+    font-size: 3.5rem;
+  }
+
+  /* about */
+  .about {
+    height: 1360px;
+    /* border: 1px solid blue; */
+  }
+
+  .about-main-text {
+    font-size: 0.9rem;
+
+    width: 450px;
+  }
+
+  .about-cards {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 360px;
+  }
+
+  .skills {
+    /* border: 1px solid black; */
+    margin-top: 26.5rem;
+    height: ;
   }
 
   /* projects */
@@ -1101,11 +1232,35 @@ input:focus {
   }
 }
 
+@media (max-width: 640px) {
+  .main {
+    height: 450px;
+  }
+
+  .main h2 {
+    width: 550px;
+    font-size: 2.5rem;
+  }
+}
+
 /* Responsive Phones */
 @media (max-width: 520px) {
+  .main {
+    height: 450px;
+  }
+
+  .main h2 {
+    width: 450px;
+  }
+
+  .main button {
+    margin-top: 5.4rem;
+  }
+
   .main p {
-    width: 400px;
-    font-size: 1rem;
+    width: 480px;
+    /* border: 1px solid red; */
+    font-size: 18px;
   }
 
   /* PROJECTS  */
@@ -1174,7 +1329,7 @@ input:focus {
 }
 
 /* Responsive Phones */
-@media (max-width: 445px) {
+@media (max-width: 465px) {
   /* Socials */
 
   /* Header */
@@ -1244,7 +1399,7 @@ input:focus {
   }
 
   .main h2 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   .main h2:first-child {
