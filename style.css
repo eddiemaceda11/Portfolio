@@ -116,6 +116,7 @@ i:hover {
   margin: 6px 0px;
   transition: 0.4s;
 }
+
 /* dropdown */
 .hidden {
   display: none;
@@ -151,6 +152,8 @@ body {
   width: 2px;
   background-color: var(--red-color);
 }
+
+/* Dropdown */
 
 /* Navbar */
 header {
@@ -908,23 +911,21 @@ input:focus {
 
   .projects .heading h3 {
     font-size: 3rem;
-    border-bottom: 2px solid var(--red-hover);
+    /* border-bottom: 2px solid var(--red-hover); */
   }
 }
 
 @media (max-width: 862px) {
   /* Socials */
-  i {
+  /* i {
     display: none;
-    /* color: var(--red-color);
-    font-size: 20px;
-    cursor: pointer; */
-  }
+    
+  } */
 
-  i:hover {
+  /* i:hover {
     display: none;
     color: rgb(222, 43, 43);
-  }
+  } */
 
   .socials {
     display: flex;
@@ -954,7 +955,7 @@ input:focus {
 
   /* projects */
   .projects {
-    /* height: 3930px; */
+    height: 4060px;
   }
 
   .projects .container {
@@ -964,7 +965,7 @@ input:focus {
 
   .projects .heading h3 {
     font-size: 3rem;
-    border-bottom: 2px solid var(--red-hover);
+    /* border-bottom: 2px solid var(--red-hover); */
   }
 
   .mobile-project-cards {
@@ -1011,11 +1012,11 @@ input:focus {
   }
 
   .description.two {
-    height: 390px;
+    height: 410px;
   }
 
   .description.three {
-    height: 370px;
+    height: 390px;
   }
 
   .description.four {
@@ -1053,12 +1054,30 @@ input:focus {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    gap: 4rem;
   }
 
   .dropdown li {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.4rem;
+  }
+
+  .dropdown ul > *:nth-child(4) {
+    border: 1px solid var(--red-color);
+    border-radius: 4px;
+    width: 130px;
+    padding: 0.8rem 0;
+    margin: 0 auto;
+  }
+
+  .dropdown ul > *:nth-child(4):hover {
+    background-color: var(--red-hover);
+  }
+
+  .dropdown ul > *:nth-child(4) a {
+    color: var(--red-color);
   }
 
   .fa-circle-xmark {
@@ -1066,10 +1085,11 @@ input:focus {
     position: absolute;
     top: 3%;
     right: 3%;
+    color: var(--red-color);
   }
 
   .fa-circle-xmark:hover {
-    color: red;
+    color: rgb(211, 17, 17);
   }
 
   /* Socials */
@@ -1127,9 +1147,19 @@ input:focus {
 
   /* about */
   .about {
-    height: 1360px;
+    height: 1440px;
     /* border: 1px solid blue; */
   }
+
+  .about .heading {
+    padding-top: 3rem;
+    /* border: 1px solid red; */
+    height: 180px;
+  }
+
+  /* h3 {
+    font-size: 3rem;
+  } */
 
   .about-main-text {
     font-size: 0.9rem;
@@ -1144,23 +1174,22 @@ input:focus {
 
   .skills {
     /* border: 1px solid black; */
-    margin-top: 26.5rem;
-    height: ;
+    margin-top: 27.5rem;
+    /* height: ; */
   }
 
   /* projects */
   .projects {
-    /* height: 3930px; */
+    height: 4060px;
   }
 
-  /* .projects .container {
-    min-width: 100%;
-    
-  } */
+  .projects .heading {
+    margin-top: 0;
+  }
 
   .projects .heading h3 {
     font-size: 3rem;
-    border-bottom: 2px solid var(--red-hover);
+    padding-top: 5rem;
   }
 
   .mobile-project-cards {
@@ -1208,27 +1237,27 @@ input:focus {
   }
 
   .description.two {
-    height: 390px;
+    height: 410px;
   }
 
   .description.three {
-    height: 370px;
+    height: 390px;
   }
 
   .description.four {
     height: 300px;
-    /* border: 1px solid red; */
   }
 
   /* CONTACT */
   .contact .heading h3 {
     font-size: 3rem;
+    margin-top: 5rem;
   }
 
   .contact .container p {
     font-size: 1.2rem;
     width: 400px;
-    border: 1px solid black;
+    margin-top: 2rem;
   }
 }
 
@@ -1237,21 +1266,20 @@ input:focus {
     height: 450px;
   }
 
+  .main h2:first-child {
+    margin-top: 2.5rem;
+  }
+
   .main h2 {
-    width: 550px;
+    width: 100%;
+    margin-top: 0.8rem;
     font-size: 2.5rem;
   }
 }
 
 /* Responsive Phones */
 @media (max-width: 520px) {
-  .main {
-    height: 450px;
-  }
-
-  .main h2 {
-    width: 450px;
-  }
+  /* s */
 
   .main button {
     margin-top: 5.4rem;
@@ -1262,8 +1290,22 @@ input:focus {
     /* border: 1px solid red; */
     font-size: 18px;
   }
+  /* about */
+  .about h3 {
+    font-size: 3.5rem;
+    margin: 0 auto;
+  }
+
+  .about-main-text {
+    /* font-size: 0.7rem; */
+    width: 80%;
+  }
 
   /* PROJECTS  */
+  .projects {
+    height: 3630px;
+  }
+
   .projects .card {
     height: 370px;
     width: 440px;
@@ -1313,31 +1355,27 @@ input:focus {
   }
 
   .description.one {
-    margin-bottom: -3rem;
+    height: 400px;
   }
 
   .description.two {
-    margin-bottom: -1.5rem;
+    height: 400px;
   }
 
   .description.three {
-    margin-bottom: -4.5rem;
-  }
-
-  description.four {
+    height: 380px;
   }
 }
 
 /* Responsive Phones */
-@media (max-width: 465px) {
+@media (max-width: 490px) {
   /* Socials */
 
   /* Header */
   .container {
-    max-width: 500px;
+    max-width: 100%;
     height: 100%;
     margin: 0 auto;
-    /* overflow: auto; */
   }
 
   header .container {
@@ -1358,35 +1396,9 @@ input:focus {
     display: none;
   }
 
-  .hamburger {
-    display: block;
-    width: 35px;
-    height: 35px;
-    cursor: pointer;
-
-    margin-top: 2.2rem;
-
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-  }
-
-  .hamburger .bar,
-  .hamburger:after,
-  .hamburger:before {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    background-color: var(--red-color);
-    margin: 6px 0px;
-    transition: 0.4s;
-  }
-
   /* Main */
   .main {
-    height: 620px;
+    height: 490px;
   }
 
   .main .container {
@@ -1394,7 +1406,7 @@ input:focus {
   }
 
   .main h4 {
-    margin-top: 5rem;
+    margin-top: 7.5rem;
     font-size: 19px;
   }
 
@@ -1403,9 +1415,9 @@ input:focus {
   }
 
   .main h2:first-child {
-    margin-top: 1rem;
+    margin-top: 2rem;
     margin-bottom: 0.2rem;
-    word-spacing: -10px;
+    word-spacing: -1px;
   }
 
   .main h2:nth-child(2) {
@@ -1420,18 +1432,15 @@ input:focus {
   }
 
   .main button {
-    margin-top: 3rem;
+    margin-top: 5rem;
   }
 
   /* About */
-  .about {
-    height: 950px;
-  }
 
   .heading {
     justify-content: flex-start;
     margin-top: 1.4rem;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
   }
 
   .heading div {
@@ -1441,31 +1450,39 @@ input:focus {
   .about h4 {
     width: 80%;
     text-align: left;
-    font-size: 16px;
-    padding: 0rem 0rem;
-    padding-left: 0.7rem;
-    margin-top: 1.4rem;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-top: 1.3rem;
+    /* border: 1px solid red; */
+  }
+
+  .skills {
+    padding-top: 1rem;
+    max-width: 100%;
+    overflow: hidden;
   }
 
   /* Projects */
   /* About */
   .projects {
-    height: 3750px;
+    max-height: 3500px;
+    overflow: hidden;
   }
 
   .projects .container {
-    border: 1px solid green;
+    /* border: 1px solid green; */
   }
 
   .projects .heading {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     margin-top: 1.4rem;
     margin-bottom: 1rem;
-    padding-left: 0.5rem;
+    /* padding-left: 0.5rem; */
   }
 
   .projects .heading h3 {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    margin: 0 auto;
   }
 
   .heading div {
@@ -1487,25 +1504,21 @@ input:focus {
     flex-direction: column;
   }
 
-  /* .project-div.todo {
-    margin-top: 8rem;
-  } */
-
   .project-div h4 {
     font-size: 34px;
-    margin-left: 1rem;
-    margin-bottom: 2rem;
-    padding-top: 3rem;
+    margin: 0 auto;
+    padding-top: 1.6rem;
+
     border-top: 1px solid var(--red-color);
-    width: 330px;
+    /* width: 330px; */
+    max-width: 100%;
     display: inline-block;
-    text-align: center;
   }
 
   .projects .card {
     height: 370px;
     width: 330px;
-    transition: transform 0.2s ease-in;
+    max-width: 100%;
   }
 
   .card img {
@@ -1516,7 +1529,6 @@ input:focus {
 
   .links {
     display: flex;
-    /* margin-top: 2.1rem; */
     justify-content: center;
     gap: 1.6rem;
   }
@@ -1528,17 +1540,14 @@ input:focus {
   }
 
   .description {
-    /* border: 1px solid red; */
-
     height: 500px;
-    width: 370px;
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   .description p {
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.4;
-    margin-top: 3rem;
+    width: 100%;
     color: var(--secondary-text-color);
   }
 
@@ -1546,22 +1555,20 @@ input:focus {
   .languages.two,
   .languages.three,
   .languages.four {
-    width: 300px;
+    /* width: 300px; */
+    max-width: 100%;
   }
 
   .description.one {
-    margin-bottom: -3rem;
+    height: 380px;
   }
 
   .description.two {
-    margin-bottom: -1.5rem;
+    height: 400px;
   }
 
   .description.three {
-    margin-bottom: -4.5rem;
-  }
-
-  description.four {
+    height: 380px;
   }
 
   /* CONTACT */
@@ -1571,28 +1578,23 @@ input:focus {
 
   .contact .container {
     flex-direction: column;
-    /* overflow-x: hidden; */
   }
-
-  /* .contact .heading {
-    border: 1px solid green;
-  } */
 
   .contact .heading h3 {
     font-size: 3rem;
+    text-align: center;
+    width: 100%;
   }
 
   .contact .container p {
-    /* border: 1px solid red; */
-    text-align: start;
-    width: 300px;
+    margin: 0 auto;
+    width: 85%;
     margin-left: 2rem;
     margin-top: 1rem;
   }
 
   form {
-    margin-left: 1.7rem;
-    width: 330px;
+    width: 78%;
   }
 
   .form-control input[type="submit"] {
