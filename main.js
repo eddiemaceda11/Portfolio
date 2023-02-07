@@ -6,6 +6,7 @@ const pageContainer = document.getElementById("page-container");
 const dropdown = document.getElementById("dropdown");
 const exitDropdownBtn = document.getElementById("exit-dropdown");
 const dropdownItem = document.querySelector("#dropdown-ul");
+const mobileSocials = document.querySelector(".mobile-socials");
 
 // Event Listeners
 // if (window.innerWidth > 782) {
@@ -26,6 +27,10 @@ exitDropdownBtn.addEventListener("click", () => {
 // close dropdown modal when user selects dropdown nav item
 dropdownItem.addEventListener("click", (e) => {
   if (e.target.classList.contains("dropdown-item")) closeDropdown();
+});
+
+mobileSocials.addEventListener("click", (e) => {
+  if (e.target.classList.contains("mobile-socials-item")) closeDropdown();
 });
 
 // Functions
