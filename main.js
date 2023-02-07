@@ -9,10 +9,6 @@ const dropdownItem = document.querySelector("#dropdown-ul");
 const mobileSocials = document.querySelector(".mobile-socials");
 
 // Event Listeners
-// if (window.innerWidth > 782) {
-//   console.log("hey");
-//   closeDropdown();
-// }
 
 // open dropdown modal on click
 hamburgerBtn.addEventListener("click", () => {
