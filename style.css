@@ -155,7 +155,7 @@ body {
 
 /* Mobile socials */
 .mobile-socials {
-  padding-top: 60px;
+  padding-top: 40px;
   justify-content: center;
   display: flex;
 
@@ -1059,7 +1059,7 @@ input:focus {
 
   .dropdown ul {
     /* border: 1px solid red; */
-    padding-top: 160px;
+    padding-top: 100px;
     height: 100%;
     display: flex;
     flex-direction: column;
