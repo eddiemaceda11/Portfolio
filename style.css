@@ -410,7 +410,7 @@ span {
 
 /* Projects */
 .projects {
-  height: 4280px;
+  height: 4330px;
 }
 
 .projects .container {
@@ -439,7 +439,7 @@ span {
   font-size: 2.5rem;
   margin-top: 0.6rem;
   padding: 3rem 0;
-  border-top: 2px solid var(--red-color);
+  /* border-top: 2px solid var(--red-color); */
 }
 
 .project-div:first-child h4 {
@@ -455,7 +455,7 @@ span {
   height: 575px;
   width: 800px;
   transition: transform 0.2s ease-in;
-  box-shadow: -1px 0px 6px 0px rgba(21, 20, 20, 0.728);
+  box-shadow: -1px 0px 6px 0px rgba(21, 20, 20, 0.216);
 }
 
 .projects .card:hover {
@@ -505,6 +505,10 @@ span {
 .description.three {
   height: 350px;
   padding-bottom: 6rem;
+}
+
+.description.four {
+  height: 350px;
 }
 
 .description p {
@@ -766,7 +770,7 @@ input:focus {
   /* Projects */
   /* About */
   .projects {
-    height: 4230px;
+    height: 4290px;
   }
 
   .projects .container {
@@ -792,7 +796,7 @@ input:focus {
     font-size: 2.5rem;
     margin-top: 0.6rem;
     padding: 3rem 0;
-    border-top: 2px solid var(--red-color);
+    /* border-top: 2px solid var(--red-color); */
   }
 
   .projects .card {
@@ -964,7 +968,7 @@ input:focus {
 
   /* projects */
   .projects {
-    height: 4060px;
+    height: 4090px;
   }
 
   .projects .container {
@@ -992,7 +996,7 @@ input:focus {
     margin: 0 auto;
     width: 400px;
     font-size: 2.5rem;
-    border-top: 1px solid var(--red-color);
+    /* border-top: 1px solid var(--red-color); */
   }
 
   .projects .card {
@@ -1190,7 +1194,7 @@ input:focus {
 
   /* projects */
   .projects {
-    height: 4060px;
+    height: 4120px;
   }
 
   .projects .heading {
@@ -1217,7 +1221,7 @@ input:focus {
     margin: 0 auto;
     width: 400px;
     font-size: 2.5rem;
-    border-top: 1px solid var(--red-color);
+    /* border-top: 1px solid var(--red-color); */
   }
 
   .projects .card {
@@ -1313,7 +1317,7 @@ input:focus {
 
   /* PROJECTS  */
   .projects {
-    height: 3630px;
+    height: 3690px;
   }
 
   .projects .card {
@@ -1475,7 +1479,7 @@ input:focus {
   /* Projects */
   /* About */
   .projects {
-    max-height: 3500px;
+    max-height: 3590px;
     overflow: hidden;
   }
 
@@ -1500,7 +1504,7 @@ input:focus {
   }
 
   .project-cards {
-    display: none;
+    /* display: none; */
   }
 
   .projects .container .mobile-project-cards {
@@ -1519,7 +1523,7 @@ input:focus {
     margin: 0 auto;
     padding-top: 1.6rem;
 
-    border-top: 1px solid var(--red-color);
+    /* border-top: 1px solid var(--red-color); */
     /* width: 330px; */
     max-width: 100%;
     display: inline-block;
