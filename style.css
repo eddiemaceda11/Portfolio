@@ -1539,6 +1539,7 @@ input:focus {
     width: 100%;
     height: 300px;
     box-shadow: inset -1px 0px 6px 0px rgba(21, 20, 20, 0.728);
+    /* object-fit: contain; */
   }
 
   .links {
